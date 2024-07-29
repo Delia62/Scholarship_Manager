@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/profile.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="#">
+    <style>
+        /* Ascunde întregul conținut al paginii inițial */
+        body > * {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <nav>
+        <h3>Scholarship</h3>
+        <ul>
+            <li><img src="img/ico/home.png" class="ico"><a href="index">Home</a></li>
+            <li><img src="img/ico/profile.png" class="ico"><a href="profile">Profile</a></li>
+            <li><img src="img/ico/paper.png" class="ico"><a href="docs">Docs</a></li>
+        </ul>
+        <a href="signup" id="log-out">Log out</a>
+    </nav>
+
+    <section>
+        <h2 id="fullName">Numele Utilizatorului</h2>
+        <div class="personal-info">
+            <div class="content-1">
+                <p>ID</p><br>
+                <p class="data" id="id">ID</p><br>
+                <p>Email</p><br>
+                <p class="data" id="email">Email</p><br>
+                <p>Phone number</p><br>
+                <p class="data" id="phoneNumber">Phone number</p><br>
+                <p>Date of birth</p><br>
+                <p class="data" id="dateOfBirth">Date of birth</p><br>
+            </div>
+
+            <div class="content-2">
+                <p>Country</p><br>
+                <p class="data" id="country">Country</p><br>
+                <p>Address</p><br>
+                <p class="data" id="address">Address</p><br>
+                <p>Year</p><br>
+                <p class="data" id="year">Year</p><br>
+                <p>Group</p><br>
+                <p class="data" id="group">Group</p><br>
+            </div>
+        </div>
+    </section>
+
+    <section class="grades">
+        <div class="semesters">
+            <p onclick="showSemester(1)">Semester 1</p>
+            <p onclick="showSemester(2)">Semester 2</p>
+            <p onclick="showSemester(3)">Semester 3</p>
+            <p onclick="showSemester(4)">Semester 4</p>
+            <p onclick="showSemester(5)">Semester 5</p>
+            <p onclick="showSemester(6)">Semester 6</p>
+        </div>
+        <table>
+            <tr>
+                <th>Semester</th>
+                <th>Subject Name</th>
+                <th>Grade</th>
+                <th>Credits</th>
+            </tr>
+            <tbody id="gradesTable">
+
+            </tbody>
+        </table>
+    </section>
+</main>
+<footer></footer>
+<script src="js/profile.js"> </script>
+
+</body>
+</html>

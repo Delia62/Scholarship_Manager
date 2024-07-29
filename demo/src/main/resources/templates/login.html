@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="data:,">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="#">
+    <script src="js/login.js"> </script>
+</head>
+
+<body>
+<main>
+    <div class="bg"></div>
+    <section>
+        <h2>Scholarship Manager</h2>
+        <form>
+            <label for="username">Username</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password</label><br>
+            <input type="password" id="password" name="password" required><br>
+        </form>
+        <button type="button" onclick="login()">Login</button>
+        <div id="successMessage" style="display: none;">Login successful!</div>
+        <div id="errorMessage" style="display: none;">Nume de utilizator sau parolă incorectă</div>
+    </section>
+</main>
+<script src="js/login.js">
+</script>
+</body>
+</html>
